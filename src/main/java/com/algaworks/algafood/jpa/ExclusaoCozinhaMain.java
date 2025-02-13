@@ -20,7 +20,7 @@ public class ExclusaoCozinhaMain {
 		Cozinha cozinha = new Cozinha();
 		cozinha.setId(1L);     
 	 	    
-	    cozinhaRepository.remover(cozinha);
+	//    cozinhaRepository.remover(cozinha);
 	    
 	   
 	  //  System.out.printf("%d - %s\n", cozinha.getId(), cozinha.getNome());
