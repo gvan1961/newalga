@@ -9,6 +9,8 @@ import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.repository.CozinhaRepository;
 import com.algaworks.algafood.domain.repository.RestauranteRepository;
 
+
+
 @Service
 public class CadastroRestauranteService {
 
@@ -31,5 +33,6 @@ public class CadastroRestauranteService {
 		
 		return restauranteRepository.salvar(restaurante);
 	}
-	
 }
+	
+
