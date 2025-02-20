@@ -17,12 +17,12 @@ public class CadastroEstadoService {
       private EstadoRepository estadoRepository;
       
       public Estado salvar(Estado estado) {
-          return estadoRepository.salvar(estado);
+          return estadoRepository.save(estado);
       }
       
       public void excluir(Long estadoId) {
           try {
-              estadoRepository.remover(estadoId);
+              estadoRepository.deleteById(estadoId);
               
           } catch (EmptyResultDataAccessException e) {
               throw new EntidadeNaoEncontradaException(
@@ -36,19 +36,6 @@ public class CadastroEstadoService {
       
   }
 
-/*
 
-public void excluir(Long cozinhaId) {
-		try {
-		cozinhaRepository.remover(cozinhaId);
-		} catch (EmptyResultDataAccessException e) {
-			throw new EntidadeNaoEncontradaException(
-			 String.format("Nâo existe cozinha com código %d", cozinhaId));
-	} catch (DataIntegrityViolationException e) {
-		throw new EntidadeEmUsoException(
-			String.format("Cozinha de código %d não pode ser removida", cozinhaId));
-	}
-	}	
-*/
   
 
