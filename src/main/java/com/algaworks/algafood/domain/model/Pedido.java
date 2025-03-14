@@ -31,6 +31,7 @@ public class Pedido {
 	    private BigDecimal subtotal;
 	    private BigDecimal taxaFrete;
 	    private BigDecimal valorTotal;
+	    
 
 	    @Embedded
 	    private Endereco enderecoEntrega;

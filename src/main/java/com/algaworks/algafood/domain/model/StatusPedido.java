@@ -7,3 +7,4 @@ public enum StatusPedido {
 	ENTREGUE,
 	CANCELADO
 }
+

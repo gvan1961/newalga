@@ -34,4 +34,5 @@ public class ItemPedido {
 	    @JoinColumn(nullable = false)
 	    private Produto produto;
 
+	    
 }
