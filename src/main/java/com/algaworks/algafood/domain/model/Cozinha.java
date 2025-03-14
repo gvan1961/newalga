@@ -26,8 +26,8 @@ public class Cozinha {
 	private Long id;
 	
 	@Column(name = "nome", nullable = false)
-	private String nome;
-
+	private String nome;	
+	
 	@JsonIgnore
 	@OneToMany(mappedBy = "cozinha")
 	private List<Restaurante> restaurantes = new ArrayList<>();
