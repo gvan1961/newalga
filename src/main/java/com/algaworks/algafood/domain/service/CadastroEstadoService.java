@@ -38,7 +38,9 @@ public class CadastroEstadoService {
               throw new EntidadeEmUsoException(
                   String.format(MSG_ESTADO_EM_USO, estadoId));
           }
+          
       }
+      
       
       public Estado buscarOuFalhar(Long estadoId) {
   		
